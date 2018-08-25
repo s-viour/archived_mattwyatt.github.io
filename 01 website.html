@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>the archives</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/fonts.css">
+</head>
+<body>
+	<div id="aesthetics">
+		<canvas id="mainCanvas"></canvas>
+	</div>
+	<div id="content">
+		<a id="sidebarButton"><h1>menu</h1></a>
+		<div id="sidebar">
+			<h1>matt wyatt</h1>
+			<ul>
+				<li><a href="index.html">about</a></li>
+				<li><a href="work.html">work</a></li>
+				<li><a href="diary.html">diary</a></li>
+				<li><a href="mailto:mwyatt1000@gmail.com">contact</a></li>
+			</ul>
+		</div>
+		<div class='letter'><h1><a href="01 website.html">development of this site</a></h1>
+
+<h3>crystalization of an aesthetic</h3>
+
+<p>Right, this diary thing. First article. This article likely won't be all that great, nor coherent. I expect to get better at this, however. Anyway, here we go. For a very long time now, I've been wanting to turn my vague idea of an aesthetic into a real and visible thing. When I began work on this site, I wanted it to look <em>exactly</em> like what I had imagined. An understandable goal. However, when I began to write the stylesheets for the site, I noticed that I really didn't have a clear idea of just what this design was; it was only a vague concept in my head. This was the first challenge.</p>
+
+<h2>the aesthetic</h2>
+
+<p>When I began to write the site, I knew that I wanted black lines, or something similar, in the background. I wanted to achieve, not a sketched look, but a sketched <em>feel</em>. To achieve this, I use a javascript library called <a href="https://roughjs.com/">rough.js.</a> Rough is wonderful, really; it's the most important part of the atmosphere of the site. After writing the script to draw random lines all over the place, I found the site still lacking. I wanted stars. I draw stars all over the place, when it comes to paper; there is no reason that they shouldn't be all over my website.</p>
+
+<h2>drawing stars</h2>
+
+<p>Unlike the line-drawing function. The star-drawing function was going to be much more difficult to work out. Lines have two points, so I could generate two random numbers on opposite ends of the page, and draw. Stars don't just have two points though, they have <em>five</em>. Writing something that generated five different points in proximity enough to make a star was out of the question. I settled for SVGs. The star drawing script actually uses pre-defined SVG paths for the stars; the SVGs were drawn with <a href="https://inkscape.org/en/">Inkscape</a> and then copied. I wrote a script that took the SVG paths, and used Rough to draw them; however, it drew all of them in the same place. Rough had no way to translate SVG paths by default, and so it drew them all at <code>(0,0)</code>. A bit of research showed that SVG DOM elements had a "translate" attribute. Bingo. After modifying the script to generate random numbers for the "translate" parameters, I was drawing cute little stars all over my site.</p>
+
+<h2>content</h2>
+
+<p>I spent a great deal of time making the background-generation for this site perfect. During that time, however, I happened to forget that I needed to display page content. While developing the background, my previously-vague idea of an aesthetic had begun to solidify into a set of rules. (two to be exact)</p>
+
+<ul>
+<li>Everything must be black and white</li>
+<li>Everything must vaguely remind the viewer of a handwritten letter</li>
+</ul>
+
+<p>A peculiar set of rules, for sure, but a set of rules nonetheless. To meet my first requirement, I selected two colors: <code>#000000</code> and <code>#fdfdfd</code>. To meet my second requirement, I settled on a CSS class that would have a header, a subheader, and a body, just like a letter. After applying a drop shadow on all sides, the site looked perfect.</p>
+</div>
+	</div>
+</body>
+<script src="js/rough.min.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/drawer.js"></script>
+</html>

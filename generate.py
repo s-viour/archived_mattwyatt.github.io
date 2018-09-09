@@ -23,7 +23,7 @@ def generate_entries(entries, preview=False):
 				new_entries.append(e[:300] + "...")
 		else:
 			new_entries.append(e)
-	text = "".join(letter.format(markdown2.markdown(e)) for e in new_entries)
+	text = "".join(letter.format(markdown2.markdown(e, extras=["fenced-code-blocks"])) for e in new_entries)
 	return template.format(text)
 
 def generate_work_page():

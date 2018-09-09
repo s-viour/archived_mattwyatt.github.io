@@ -134,6 +134,10 @@ body {
 	font-weight: lighter;
 }
 
+#content .codehilite pre {
+	overflow: scroll;
+}
+
 @media (min-width: 768px) {
 	#content #sidebarButton {
 		display: none;
@@ -153,5 +157,9 @@ body {
 		margin-left: 300px;
 		width: 60%;
 		max-width: 900px;
+	}
+
+	#content .codehilite pre {
+		overflow: auto;
 	}
 }

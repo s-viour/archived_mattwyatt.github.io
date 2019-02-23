@@ -52,6 +52,7 @@ function makeAesthetics() {
 
 	const drawSurface = rough.canvas(document.getElementById("mainCanvas"));
 
+	/*
 	var lines = generateLineDimensions();
 	lines.forEach((line) => {
 		var options = {
@@ -63,6 +64,7 @@ function makeAesthetics() {
 					 line[3],
 					 options);
 	});
+	*/
 	drawStars();
 }
 

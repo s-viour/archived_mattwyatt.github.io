@@ -1,43 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>the archives</title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/code.css">
-</head>
-<body>
-	<div id="aesthetics">
-		<canvas id="mainCanvas"></canvas>
-	</div>
-	<div id="content">
-		<a id="sidebarButton"><h1>menu</h1></a>
-		<div id="sidebar">
-			<h1>matt wyatt</h1>
-			<ul>
-				<li><a href="index.html">about</a></li>
-				<li><a href="work.html">work</a></li>
-				<li><a href="diary.html">diary</a></li>
-				<li><a href="mailto:mwyatt1000@gmail.com">contact</a></li>
-			</ul>
-		</div>
-		<div class='letter'><h1><a href="02 multitasking.html">linux-based multitasking</a></h1>
-
-<h3>this made me understand std::thread</h3>
-
-<p>For whatever reason, I've always fancied the idea of building a process manager. I have indeed built one, and her name is <a href="https://github.com/MattWyatt/sybil-process.manager">Sybil</a>. Sybil, however, was thrown...</p>
-</div><div class='letter'><h1><a href="01 website.html">development of this site</a></h1>
-
-<h3>crystalization of an aesthetic</h3>
-
-<p>Right, this diary thing. First article. This article likely won't be all that great, nor coherent. I expect to get better at this, however. Anyway, here we go. For a very long time now, I've been wanting to turn my vagu...</p>
+---
+layout: default
+title: diary
+---
+{% for post in site.posts %}
+<div class='letter'>
+	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+	<h3>{{ post.subtitle }}</h3>
+	<p>{{ post.excerpt }}</p>
 </div>
-	</div>
-</body>
-<script src="js/rough.min.js"></script>
-<script src="js/menu.js"></script>
-<script src="js/drawer.js"></script>
-</html>
+{% endfor %}

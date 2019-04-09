@@ -134,7 +134,7 @@ body {
 	font-weight: lighter;
 }
 
-#content .codehilite pre {
+#content .highlight pre {
 	overflow: scroll;
 }
 

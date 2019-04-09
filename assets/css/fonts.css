@@ -1,47 +1,47 @@
 @font-face {
 	font-family: "Noto Serif";
-	src: url("/fonts/NotoSerif-Regular.ttf");
+	src: url("/assets/fonts/NotoSerif-Regular.ttf");
 }
 
 @font-face {
 	font-family: "Noto Serif";
-	src: url("../fonts/NotoSerif-Bold.ttf");
+	src: url("/assets/fonts/NotoSerif-Bold.ttf");
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "Noto Serif";
-	src: url("../fonts/NotoSerif-Italic.ttf");
+	src: url("/assets/fonts/NotoSerif-Italic.ttf");
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Noto Serif";
-	src: url("../fonts/NotoSerif-BoldItalic.ttf");
+	src: url("/assets/fonts/NotoSerif-BoldItalic.ttf");
 	font-style: italic;
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "Montserrat";
-	src: url("../fonts/Montserrat-Light.ttf");
+	src: url("/assets/fonts/Montserrat-Light.ttf");
 }
 
 @font-face {
 	font-family: "Montserrat";
-	src: url("../fonts/Montserrat-SemiBold.ttf");
+	src: url("/assets/fonts/Montserrat-SemiBold.ttf");
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "Montserrat";
-	src: url("../fonts/Montserrat-LightItalic.ttf");
+	src: url("/assets/fonts/Montserrat-LightItalic.ttf");
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Montserrat";
-	src: url("../fonts/Montserrat-SemiBoldItalic.ttf");
+	src: url("/assets/fonts/Montserrat-SemiBoldItalic.ttf");
 	font-style: italic;
 	font-weight: bold;
 }

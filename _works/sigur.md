@@ -1,6 +1,6 @@
 ---
 layout: default
-title: sybil process manager
+title: sigur discord bot
 subtitle: mistress of memory
 link: https://github.com/MattWyatt/sigur-discord-bot
 ---
